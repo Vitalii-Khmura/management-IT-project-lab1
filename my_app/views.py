@@ -9,7 +9,7 @@ from my_app.models import User, People
 # Create your views here.
 
 
-class IndexListView( generic.ListView):
+class IndexListView(generic.ListView):
     model = People
     template_name = "index.html"
 
@@ -19,4 +19,3 @@ class IndexListView( generic.ListView):
         context["count_user"] = get_user_model().objects.count()
 
         return context
-

@@ -1,8 +1,8 @@
 import subprocess
 
+
 def build_project():
     print("Початок збірки Django проекту")
-
 
     subprocess.run(["pip", "install", "django"])
 
@@ -18,6 +18,7 @@ def build_project():
     subprocess.run(["python", "manage.py", "runserver"])
 
     print("Збірка завершена")
+
 
 if __name__ == "__main__":
     build_project()
