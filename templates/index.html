@@ -11,5 +11,15 @@
   <h1 style="text-align: center">
     Hello world!
   </h1>
+    <div>
+      <h3 style="text-align: center">People</h3>
+      {% for person in people_list %}
+        <p style="text-align: center">{{ person.name }} - {{ person.last_name }} - {{ person.age }}</p>
+      {% endfor %}
+
+      <h5 style="text-align: center">
+        user count: {{ count_user }}
+      </h5>
+    </div>
 </body>
 </html>
