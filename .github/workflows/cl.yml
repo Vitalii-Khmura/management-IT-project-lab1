@@ -3,7 +3,7 @@ name: cl
 on:
   push:
     branches:
-      - "develop"
+      - "master"
 
 jobs:
   test:
